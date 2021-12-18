@@ -1,0 +1,64 @@
+{
+  "name": "media-downloader",
+  "version": "1.0.0",
+  "description": "An application for downloading online media!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mario Di Caprio",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "core-js": "^3.19.3",
+    "css-loader": "5.2.6",
+    "electron": "^16.0.2",
+    "electron-builder": "^22.14.5",
+    "electron-webpack": "^2.8.2",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.2.14",
+    "postcss-nested": "^5.0.6",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.43.5",
+    "sass-loader": "10",
+    "style-loader": "2.0.0",
+    "webpack": "^4.46.0",
+    "webpack-bundle-tracker": "^1.4.0"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.1",
+    "jquery": "^3.6.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "source-map-support": "^0.5.21",
+    "ytdl-core": "^4.9.1"
+  },
+  "build": {
+    "appId": "com.mariodicaprio.mediaDownloader",
+    "productName": "Media Downloader",
+    "directories": {
+      "buildResources": "build"
+    },
+    "files": [
+      "build/*"
+    ],
+    "win": {
+      
+    },
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "linux": {
+      "category": "Utility",
+      "description": "${description}"
+    }
+  }
+}

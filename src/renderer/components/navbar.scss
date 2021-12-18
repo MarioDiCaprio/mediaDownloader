@@ -1,0 +1,9 @@
+$navbar-width: 400px;
+$navbar-height: 100vh;
+
+#navbar {
+    min-width: $navbar-width;
+    min-height: $navbar-height;
+    padding: 15px;
+    margin-right: 15px;
+}

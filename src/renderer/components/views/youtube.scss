@@ -1,0 +1,34 @@
+$yt-primary-color: rgb(241, 70, 70);
+$yt-secondary-color: rgb(240, 240, 240);
+
+
+.yt-btn {
+    background-color: $yt-primary-color !important;
+    color: $yt-secondary-color !important;
+}
+
+.yt-text {
+    color: $yt-primary-color;
+}
+
+#yt-main {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#yt-input-link-wrapper > div {
+    width: 500px;
+}
+
+#yt-download-wrapper > div {
+    width: 500px;
+}
+
+#yt-download-btn {
+    width: 200px;
+    height: 75px;
+    font-size: 20px;
+}
